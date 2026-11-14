@@ -25,8 +25,7 @@
 
 **计划指纹硬约束：** 审批记录必须钉住当时的 `plan_sha256`。审批通过后若计划有任何变更（指纹不一致），**不得**凭该审批开 Draft PR；须重新影子执行并重新审批。不允许「先批一版、再改计划开 PR」。
 
-过关定义（立项阶段）：文档把「谁用、主路径、复用边界、非目标、Go 预留」写清即可。  
-下一阶段（另开刀）才做**最小可演示切片**；Go 服务侧与演示切片均在 GitHub 立项仓推送之后再开，本仓不在立项刀写业务代码。
+P0 过关定义已满足。P1 验收口径见 [P1-SLICE.md](P1-SLICE.md)（已冻结）；**实现与 Go 仍另开刀，本页不写业务代码。**
 
 ## 3. 复用，不重造
 
@@ -77,14 +76,15 @@ change-delivery 产出轨迹
 
 | 阶段 | 内容 | 状态 |
 |---|---|---|
-| P0 立项 | 独立仓库 + 本范围说明 + GitHub 空仓推送文档 | **已过关**（2026-11-14 人工确认；本刀完成 push） |
-| P1 最小可演示切片 | 单主路径：影子→审批（钉 `plan_sha256`）→Draft | 未开始；push 后另开刀 |
-| P2+ | Go 服务侧模块按需启用 | 未开始；排在 P1 之后 |
+| P0 立项 | 独立仓库 + 本范围说明 + GitHub 推送文档 | **已过关**（2026-11-14） |
+| P1 最小可演示切片 | 口径：[P1-SLICE.md](P1-SLICE.md)；实现：读 Issue→shadow→钉指纹审批→Draft | **口径已冻结**；实现未开始 |
+| P2+ | Go 服务侧模块按需启用 | 未开始；排在 P1 实现之后 |
 
-不要在本刀顺手实现 P1 或 Go。
+不要在口径冻结刀顺手实现 P1 或 Go。
 
 ## 8. 参考（只读，不迁）
 
-- 工作助手计划残页：`react-agent/docs/change-delivery-plan.md`
+- 独立仓：https://github.com/weihuaguo270-ops/change-delivery
+- 工作助手计划残页：`react-agent/docs/change-delivery-plan.md`（应指向本仓）
 - 技术附录：`react-agent/docs/features/github-delivery-workflow.md`
 - 沙箱仓：`weihuaguo270-ops/agent-delivery-sandbox`（`external_real_sandbox`，≠ 生产）
