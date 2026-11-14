@@ -1,0 +1,19 @@
+{
+  "issue_id": "P1-DEMO-001",
+  "title": "Bump greeting constant for delivery demo",
+  "body": "Change GREETING from hello to hi in the sandbox fixture only.",
+  "repository": "local://sandbox",
+  "base_ref": "main",
+  "intended_paths": ["sandbox/greeting.txt"],
+  "patch_summary": [
+    {
+      "path": "sandbox/greeting.txt",
+      "old": "hello",
+      "new": "hi"
+    }
+  ],
+  "acceptance_criteria": [
+    "shadow produces stable plan_sha256",
+    "Draft PR only after matching approval"
+  ]
+}
