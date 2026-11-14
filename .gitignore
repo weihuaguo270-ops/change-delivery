@@ -1,0 +1,29 @@
+# Secrets & local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Python / Go build
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.exe
+bin/
+vendor/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts (future demos)
+artifacts/
+*.log
