@@ -62,4 +62,4 @@
 |---|---|
 | P1 验收口径 | **已冻结**（本文） |
 | P1 实现 | **complete（mock / 原型，不是生产）**；证据 [P1_EVIDENCE.md](P1_EVIDENCE.md)、验收 [P1_ACCEPTANCE.md](P1_ACCEPTANCE.md) |
-| P2+ Go 服务侧 | 未开始；排在 P1 之后，需另开刀 |
+| P2 Go 服务侧 | 口径已冻结：[P2-SCOPE.md](P2-SCOPE.md)；实现未开始 |

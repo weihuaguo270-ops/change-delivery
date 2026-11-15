@@ -2,7 +2,7 @@
 
 独立产品：把 Issue / 任务单经影子执行与人工审批后开出 Draft PR。
 
-**P0 立项已过关。P1 最小演示已验收 complete（mock / 原型，不是生产）；不要写成可发布产品。未开 Go / P2。**
+**P0 / P1 已过关（P1 = mock / 原型，不是生产）。P2 仅冻结 Go 服务侧范围，未实现；不要写成可发布产品。**
 
 主路径：读 Issue → 影子执行 → 人工审批（钉死 `plan_sha256`）→ 才开 Draft PR。审批通过后不得改计划再开 PR。
 
@@ -28,6 +28,7 @@ python -m change_delivery.cli guarded --issue fixtures/issue.json --artifact-dir
 - [P1 验收口径](docs/P1-SLICE.md)
 - [P1 证据索引](docs/P1_EVIDENCE.md)
 - [P1 人工验收](docs/P1_ACCEPTANCE.md) — **complete（mock / 原型）**
+- [P2 范围说明](docs/P2-SCOPE.md) — **口径已冻结**；实现未开始
 - [Format B 对齐](docs/FORMAT_B_ALIGNMENT.md)
 
 ## 相邻仓库（不合并）
@@ -38,7 +39,8 @@ python -m change_delivery.cli guarded --issue fixtures/issue.json --artifact-dir
 | `trace-debugger` | 轨迹失败雷达与 CI 钩子，不做最终裁决 |
 | `llm-eval-engine` | 发版前自检（pass / review / hold） |
 
-## 明确不做（P1）
+## 明确不做
 
-- 不从 `react-agent` 迁代码，不写 Go 服务
-- Draft 默认为本地 mock 证据，不是生产 GitHub App 接入
+- 不从 `react-agent` 迁代码；工作助手交付附录先保留
+- 不重写 Agent 循环；P2 Go 只做服务侧且不一次铺开
+- P1 Draft 为本地 mock 证据，不是生产 GitHub App 接入
