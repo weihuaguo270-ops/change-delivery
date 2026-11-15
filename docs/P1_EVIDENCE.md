@@ -1,6 +1,8 @@
 # P1 证据索引
 
-> 实现日：2026-11-14（Asia/Shanghai）。Draft 为 **mock**（`draft_pr.json`），非生产 GitHub 写入。
+> 实现日：2026-11-14（Asia/Shanghai）。  
+> 人工验收：2026-11-15 → **complete（mock / 原型，不是生产）**，见 [P1_ACCEPTANCE.md](P1_ACCEPTANCE.md)。  
+> Draft 为 **mock**（`draft_pr.json`），非生产 GitHub 写入。
 
 | ID | 证据 |
 |---|---|

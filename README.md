@@ -2,7 +2,7 @@
 
 独立产品：把 Issue / 任务单经影子执行与人工审批后开出 Draft PR。
 
-**P0 立项已过关。P1 最小演示已实现（mock Draft），待人工过关；过关前不要写入简历。**
+**P0 立项已过关。P1 最小演示已验收 complete（mock / 原型，不是生产）；不要写成可发布产品。未开 Go / P2。**
 
 主路径：读 Issue → 影子执行 → 人工审批（钉死 `plan_sha256`）→ 才开 Draft PR。审批通过后不得改计划再开 PR。
 
@@ -27,6 +27,7 @@ python -m change_delivery.cli guarded --issue fixtures/issue.json --artifact-dir
 - [范围说明](docs/SCOPE.md)
 - [P1 验收口径](docs/P1-SLICE.md)
 - [P1 证据索引](docs/P1_EVIDENCE.md)
+- [P1 人工验收](docs/P1_ACCEPTANCE.md) — **complete（mock / 原型）**
 - [Format B 对齐](docs/FORMAT_B_ALIGNMENT.md)
 
 ## 相邻仓库（不合并）

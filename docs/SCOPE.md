@@ -77,10 +77,10 @@ change-delivery 产出轨迹
 | 阶段 | 内容 | 状态 |
 |---|---|---|
 | P0 立项 | 独立仓库 + 本范围说明 + GitHub 推送文档 | **已过关**（2026-11-14） |
-| P1 最小可演示切片 | 口径：[P1-SLICE.md](P1-SLICE.md)；证据：[P1_EVIDENCE.md](P1_EVIDENCE.md) | **口径已冻结**；实现待人工过关 |
+| P1 最小可演示切片 | 口径：[P1-SLICE.md](P1-SLICE.md)；验收：[P1_ACCEPTANCE.md](P1_ACCEPTANCE.md) | **complete（mock / 原型，不是生产）** |
 | P2+ | Go 服务侧模块按需启用 | 未开始；排在 P1 实现之后 |
 
-不要在口径冻结刀顺手实现 P1 或 Go。
+P1 已人工验收 complete（mock / 原型）。不要顺手开 Go / P2。
 
 ## 8. 参考（只读，不迁）
 

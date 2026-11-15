@@ -1,7 +1,7 @@
 # P1 最小可演示切片 — 验收口径（已冻结）
 
 > 冻结日：2026-11-14（Asia/Shanghai）。  
-> 本页只定**做什么才算过关**；**本刀不写业务代码**。实现另开刀。  
+> 人工验收：2026-11-15 → **P1 complete（mock / 原型，不是生产）**，见 [P1_ACCEPTANCE.md](P1_ACCEPTANCE.md)。  
 > 上位边界见 [SCOPE.md](SCOPE.md)。
 
 ## 1. 切片目标
@@ -61,5 +61,5 @@
 | 项 | 状态 |
 |---|---|
 | P1 验收口径 | **已冻结**（本文） |
-| P1 实现 | **进行中 / 待人工过关**；证据见 [P1_EVIDENCE.md](P1_EVIDENCE.md) |
-| P2+ Go 服务侧 | 未开始；排在 P1 实现过关之后 |
+| P1 实现 | **complete（mock / 原型，不是生产）**；证据 [P1_EVIDENCE.md](P1_EVIDENCE.md)、验收 [P1_ACCEPTANCE.md](P1_ACCEPTANCE.md) |
+| P2+ Go 服务侧 | 未开始；排在 P1 之后，需另开刀 |
